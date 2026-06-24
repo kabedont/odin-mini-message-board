@@ -1,0 +1,11 @@
+<ul>
+    <h2><%= title %></h2>
+    <% messages.forEach(message => { %>
+        <li>
+            <strong><%= message.text %></strong>
+            <a href="/message/<%= message.id %>">open</a>
+        </li>
+    <% }) %>
+    
+    <h4><a href = "/new">make your own</a></h4>
+</ul>
